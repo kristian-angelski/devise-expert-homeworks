@@ -9,7 +9,7 @@ function Product() {
     console.log(`Product: ${name}, quantity: ${quantity}, price: ${price}; Expected income = ${calculateIncome(quantity,price)}`);
   };
 
-  function calculateIncome(quantity, price) {
+  function calculateIncome() {
     let income = quantity * price;
     return income;
   }
