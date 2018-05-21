@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var person_1 = require("../task01/person");
+var queue_1 = require("./queue");
+var person = new person_1.Person('a', 'b', 3);
+var queue = new queue_1.Queue();
+queue.put(person);
+queue.put(new person_1.Person('b', 'c', 33));
+queue.put(new person_1.Person('z', 's', 53));
+queue.put(new person_1.Person('x', 'y', 43));
+console.log(queue);
+queue.get();
+console.log(queue);
